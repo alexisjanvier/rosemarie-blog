@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => (
             </Link>
           </h3>
           <p>{node.frontmatter.description}</p>
-          <p>{node.excerpt}</p>
+          <img src={`/images/${node.frontmatter.picture}`} />
         </div>
       ))}
   </div>
@@ -36,6 +36,7 @@ export const query = graphql`
           frontmatter {
             title
             description
+            picture
           }
           excerpt
         }

@@ -11,7 +11,12 @@ module.exports = {
         path: `${__dirname}/content/`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        excerpt_separator: `<!--more-->`
+      }
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {

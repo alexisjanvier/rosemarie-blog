@@ -1,5 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import slugify from 'slugify';
 
 const IndexPage = ({ data }) => (
   <div>
@@ -9,9 +10,15 @@ const IndexPage = ({ data }) => (
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <h3>
-            {node.frontmatter.title}
+            <Link to={`/${slugify(node.frontmatter.title, {
+                  replacement: '-',
+                  lower: true          // result in lower case
+              })}`}>
+              {node.frontmatter.title}
+            </Link>
           </h3>
           <p>{node.frontmatter.description}</p>
+          <p>{node.excerpt}</p>
         </div>
       ))}
   </div>
@@ -30,6 +37,7 @@ export const query = graphql`
             title
             description
           }
+          excerpt
         }
       }
     }

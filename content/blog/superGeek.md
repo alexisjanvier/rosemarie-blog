@@ -1,7 +1,7 @@
 ---
 order: 1
 title: 'Super Geek'
-picture: 'supergeek.png'
+picture: 'superGeek1.jpg'
 description: 'Un super collaborateur de rubber ducking'
 type: poupée
 tags:
@@ -13,3 +13,5 @@ Un an déja
 #### La classe
 
 Avec lui aucun bug ne me résiste.
+
+![SuperGeek au boulôt](/images/superGeek2.jpg)

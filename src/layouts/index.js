@@ -8,10 +8,10 @@ import Header from '../components/Header'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Koumoiça"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Koumoiça - le site de couture de Rosemarie' },
+        { name: 'keywords', content: 'couture, Caen' },
       ]}
     />
     <Header />

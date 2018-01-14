@@ -10,7 +10,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Koumoiça"
       meta={[
-        { name: 'description', content: 'Koumoiça - le site de couture de Rosemarie' },
+        { name: 'description', content: 'Koumoiça - Rosemarie' },
         { name: 'keywords', content: 'couture, Caen' },
       ]}
     />

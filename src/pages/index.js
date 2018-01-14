@@ -5,14 +5,14 @@ import slugify from 'slugify';
 const IndexPage = ({ data }) => (
   <div>
     <h1>Hello</h1>
-    <p>Bienvenue sur mon site de couture.</p>
+    <p>Bienvenue sur mon site de couture. C'est encore juste le début, mais c'est.</p>
     <h4>{data.allMarkdownRemark.totalCount} travail en stock</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <h3>
             <Link to={`/${slugify(node.frontmatter.title, {
                   replacement: '-',
-                  lower: true          // result in lower case
+                  lower: true,
               })}`}>
               {node.frontmatter.title}
             </Link>

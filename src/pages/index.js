@@ -6,7 +6,7 @@ const IndexPage = ({ data }) => (
   <div>
     <h1>Hello</h1>
     <p>Bienvenue sur mon site de couture. C'est encore juste le début, mais c'est.</p>
-    <h4>{data.allMarkdownRemark.totalCount} travail en stock</h4>
+    <h4>{data.allMarkdownRemark.totalCount} travails en stock</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <h3>
@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => (
             </Link>
           </h3>
           <p>{node.frontmatter.description}</p>
-          <img src={`/images/${node.frontmatter.picture}`} />
+          <img width="200" src={`/images/${node.frontmatter.picture}`} />
         </div>
       ))}
   </div>

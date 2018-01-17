@@ -3,14 +3,10 @@ order: 1
 title: 'Super Geek'
 picture: 'superGeek1.jpg'
 description: 'Un super collaborateur de rubber ducking'
-type: poupée
-tags:
-    - volante
 ---
+Aussi couregeux sa n'existe pas!
 
-Un an déja
-
-#### La classe
+#### trop bien fait
 
 Avec lui aucun bug ne me résiste.
 

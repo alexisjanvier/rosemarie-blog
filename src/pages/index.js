@@ -4,7 +4,7 @@ import slugify from 'slugify';
 
 const IndexPage = ({ data }) => (
   <div>
-    <h1>Hello</h1>
+    <h1>Salut</h1>
     <p>Bienvenue sur mon site de couture. C'est encore juste le début, mais c'est.</p>
     <h4>{data.allMarkdownRemark.totalCount} travails en stock</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (

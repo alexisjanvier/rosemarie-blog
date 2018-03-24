@@ -8,4 +8,4 @@ Elle adore le miel et se froter a un arbre
 
 #### oursement belle
 
-Avec elle tu est heureux.
+Avec elle tu es heureux.
